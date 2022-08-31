@@ -14,7 +14,7 @@ Ebubekir Sarıgül
 Class: SDET TR B1 C,  GitHub ID: ebusarigul
 
 Şükrü Kılıç
-Class: SDET TR B1 C,  GitHub ID: sukru77
+Class: SDET TR B1 C,  GitHub ID: Schukru
 
 Bora Akın Yılmaz
 Class: SDET TR B1 C,  GitHub ID: boraakinyilmaz
