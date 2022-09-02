@@ -50,6 +50,6 @@ public class _TEC7_SchoolSetupSteps {
     @And("User delete item from Dialog")
     public void userDeleteItemFromDialog() {
         dc.findAndClick("deleteButton");
-        dc.findAndClick("deleteDialogButton");
+        dc.findAndClick("deleteDialogBtn");
     }
 }
