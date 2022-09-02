@@ -73,6 +73,26 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//button[@class='consent-give'])[1]")
     private WebElement acceptCookies;
 
+    //------------------------------------------------------
+    // TEC7 - TEC8 DialogContent
+    @FindBy(xpath = "(//mat-select[@role=\"combobox\"])[3]")
+    private WebElement classroomSelect;
+
+    @FindBy(xpath = "//span[text()=\" Other \"]")
+    private WebElement other;
+
+    @FindBy(xpath = "//ms-integer-field[@formcontrolname='capacity']//input")
+    private WebElement capacity;
+
+    @FindBy(xpath = "(//ms-edit-button//button)[1]")
+    private WebElement editButton;
+
+    @FindBy(xpath = "(//mat-slide-toggle)[1]")
+    private WebElement slideToggle;
+
+    @FindBy(xpath = "//span[text()=\"Section\"]")
+    private WebElement section;
+
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
@@ -86,6 +106,7 @@ public class DialogContent extends Parent{
             case "searchInput" : myElement =searchInput; break;
             case "integrationCode" : myElement =integrationCode; break;
             case "priorityCode" : myElement =priorityCode; break;
+            case "capacity" : myElement =capacity; break;
         }
 
         sendKeysFunction(myElement, value);
@@ -103,6 +124,11 @@ public class DialogContent extends Parent{
             case "deleteButton" : myElement =deleteButton; break;
             case "deleteDialogBtn" : myElement =deleteDialogBtn; break;
             case "acceptCookies" : myElement =acceptCookies; break;
+            case "classroomSelect" : myElement =classroomSelect; break;
+            case "other" : myElement =other; break;
+            case "editButton" : myElement =editButton; break;
+            case "slideToggle" : myElement =slideToggle; break;
+            case "section" : myElement =section; break;
 
         }
 
