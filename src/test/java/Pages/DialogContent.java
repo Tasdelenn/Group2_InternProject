@@ -95,6 +95,21 @@ public class DialogContent extends Parent{
 
 
 
+
+    //----------------------------------------------------
+    // TEC-11 - TEC-12 LeftNav
+    @FindBy (css="ms-text-field[formcontrolname='description']>input")
+    private WebElement descriptionInput;
+
+    @FindBy (css="ms-text-field[placeholder='DISCOUNT.TITLE.DESCRIPTION']>input")
+    private WebElement searchDescription;
+
+    @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.CODE']>input")
+    private WebElement searchCode;
+
+
+
+
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
@@ -109,6 +124,9 @@ public class DialogContent extends Parent{
             case "integrationCode" : myElement =integrationCode; break;
             case "priorityCode" : myElement =priorityCode; break;
             case "capacity" : myElement =capacity; break;
+            case "descriptionInput" : myElement =descriptionInput; break;
+            case "searchDescription" : myElement =searchDescription; break;
+            case "searchCode" : myElement =searchCode; break;
         }
 
         sendKeysFunction(myElement, value);
