@@ -93,6 +93,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//span[text()=\"Section\"]")
     private WebElement section;
 
+
+
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
