@@ -15,9 +15,9 @@ Feature: School Setup Locations Functionality
       | classroomSelect |
       | other           |
     And User sending the keys in Dialog content
-      | nameInput | Kantin |
-      | shortName | KNT    |
-      | capacity  | 50     |
+      | nameInput | Kantin0 |
+      | shortName | KNT0    |
+      | capacity  | 500     |
     And Click on the element in the Dialog
       | saveButton |
 
@@ -26,9 +26,9 @@ Feature: School Setup Locations Functionality
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
-      | nameInput | Kutup |
-      | shortName | KTP   |
-      | capacity  | 100   |
+      | nameInput | Kutup0 |
+      | shortName | KTP0   |
+      | capacity  | 1000   |
     And Click on the element in the Dialog
       | saveButton |
     Then Success message should be displayed
