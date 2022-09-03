@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 
 import java.util.List;
 
-public class _TEC7_SchoolSetupSteps {
+public class _MainSteps {
 
     LeftNav ln = new LeftNav();
     DialogContent dc = new DialogContent();
