@@ -1,4 +1,4 @@
-Feature: School Setup Departments Functionality
+Feature: Discounts Setup Parameters Functionality
 
   Background:
     Given Navigate to basqar
