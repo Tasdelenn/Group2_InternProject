@@ -19,15 +19,13 @@ public class Hooks {
     @Before
     public void before()
     {
-        System.out.println("Senaryo başladı");
+        System.out.println("Scenario Started");
     }
 
     @After
     public void after(Scenario scenario)
     {
-        System.out.println("Senaryo Bitti");
-        System.out.println("scenario sonucu="+ scenario.getStatus());
-        System.out.println("scenario isFailed ?="+ scenario.isFailed());
+        System.out.println("Scenario Finished");
 
         LocalDateTime date = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy");
