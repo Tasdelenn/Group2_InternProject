@@ -104,6 +104,9 @@ public class DialogContent extends Parent{
     @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.CODE']>input")
     private WebElement searchCode;
 
+    @FindBy (xpath="(//ms-table-toolbar//button)[1]")
+    private WebElement tableAddButton;
+    
     //-------------------------------------------------------
     //TEC3-TEC10 DİALOG
 
@@ -128,7 +131,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-delete-button//button)[3]")
     private WebElement deleteButton3;
 
-
+    @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.NAME']>input")
+    private WebElement searchGeneralName;
 
 
     WebElement myElement;
@@ -148,6 +152,7 @@ public class DialogContent extends Parent{
             case "descriptionInput" : myElement =descriptionInput; break;
             case "searchDescription" : myElement =searchDescription; break;
             case "searchCode" : myElement =searchCode; break;
+            case "searchGeneralName" : myElement =searchGeneralName; break;
             case "description" : myElement =description; break;
             case "order" : myElement =order; break;
         }
@@ -172,6 +177,7 @@ public class DialogContent extends Parent{
             case "editButton" : myElement =editButton; break;
             case "slideToggle" : myElement =slideToggle; break;
             case "section" : myElement =section; break;
+            case "tableAddButton" : myElement =tableAddButton; break;
             case "matSelect" : myElement =matSelect; break;
             case "examination" : myElement =examination; break;
             case "nameInput" : myElement =nameInput; break;
@@ -207,9 +213,6 @@ public class DialogContent extends Parent{
         findAndClick("deleteButton");// silme butonua bas
         findAndClick("deleteDialogBtn");// dilogdaki silme butonuna bas
     }
-
-
-
 
 
 
