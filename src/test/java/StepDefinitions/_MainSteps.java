@@ -6,7 +6,6 @@ import Utilities.GWD;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -36,6 +35,8 @@ public class _MainSteps {
         for (int i = 0; i < listElements.size() ; i++) {
             dc.findAndClick(listElements.get(i));
         }
+
+
     }
 
     @And("User sending the keys in Dialog content")
