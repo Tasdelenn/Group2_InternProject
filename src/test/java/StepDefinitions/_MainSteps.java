@@ -2,10 +2,15 @@ package StepDefinitions;
 
 import Pages.DialogContent;
 import Pages.LeftNav;
+import Utilities.GWD;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class _MainSteps {
@@ -45,6 +50,8 @@ public class _MainSteps {
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
         dc.findAndContainsText("successMessage","success");
+        WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(text(),'successfully')]")));
     }
 
     @And("User delete item from Dialog")

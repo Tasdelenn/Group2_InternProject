@@ -93,11 +93,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//span[text()=\"Section\"]")
     private WebElement section;
 
-
-
-
     //----------------------------------------------------
-    // TEC-11 - TEC-12 LeftNav
+    // TEC-11 - TEC-12 DialogContent
     @FindBy (css="ms-text-field[formcontrolname='description']>input")
     private WebElement descriptionInput;
 
@@ -109,6 +106,30 @@ public class DialogContent extends Parent{
 
     @FindBy (xpath="(//ms-table-toolbar//button)[1]")
     private WebElement tableAddButton;
+    
+    //-------------------------------------------------------
+    //TEC3-TEC10 DİALOG
+
+    @FindBy(xpath = "//mat-form-field//textarea")
+    private WebElement description;
+
+    @FindBy(xpath = "//mat-select[@formcontrolname=\"attachmentStages\"]")
+    private WebElement matSelect;
+
+    @FindBy(xpath = "//span[text()=\" Examination \"]")
+    private WebElement examination;
+
+    @FindBy(xpath = "//mat-select[@formcontrolname=\"id\"]")
+    private WebElement nextGrade;
+
+    @FindBy(xpath = "//span[text()=\" Graduate Level \"]")
+    private WebElement graduateLevel;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname=\"order\"]/input")
+    private WebElement order;
+
+    @FindBy(xpath = "(//ms-delete-button//button)[3]")
+    private WebElement deleteButton3;
 
     @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.NAME']>input")
     private WebElement searchGeneralName;
@@ -132,6 +153,8 @@ public class DialogContent extends Parent{
             case "searchDescription" : myElement =searchDescription; break;
             case "searchCode" : myElement =searchCode; break;
             case "searchGeneralName" : myElement =searchGeneralName; break;
+            case "description" : myElement =description; break;
+            case "order" : myElement =order; break;
         }
 
         sendKeysFunction(myElement, value);
@@ -155,6 +178,12 @@ public class DialogContent extends Parent{
             case "slideToggle" : myElement =slideToggle; break;
             case "section" : myElement =section; break;
             case "tableAddButton" : myElement =tableAddButton; break;
+            case "matSelect" : myElement =matSelect; break;
+            case "examination" : myElement =examination; break;
+            case "nameInput" : myElement =nameInput; break;
+            case "nextGrade" : myElement =nextGrade; break;
+            case "graduateLevel" : myElement =graduateLevel; break;
+            case "deleteButton3" : myElement =deleteButton3; break;
 
         }
 
@@ -178,14 +207,12 @@ public class DialogContent extends Parent{
         findAndSend("searchInput", searchText); // aranacak kelimeyi kutucuğa gönder
         findAndClick("searchButton"); // arama butonuna bas
 
-        waitUntilLoading();
+        //waitUntilLoading();
+        GWD.Bekle(3);
 
         findAndClick("deleteButton");// silme butonua bas
         findAndClick("deleteDialogBtn");// dilogdaki silme butonuna bas
     }
-
-
-
 
 
 

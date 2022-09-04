@@ -1,41 +1,36 @@
-Feature: School Setup Locations Functionality
+Feature: Document Types Functionality
 
   Background:
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
 
-  Scenario: Create School Locations
+  Scenario: Create, Edit And Delete a Document Types
     And Click on the element in the left Nav
-      | setupOne    |
-      | schoolSetup |
-      | locations   |
+      | setupOne      |
+      | parameters    |
+      | documentTypes |
     And Click on the element in the Dialog
-      | addButton       |
-      | classroomSelect |
-      | other           |
+      | addButton   |
+      | matSelect   |
+      | examination |
+    And click Anywhere
     And User sending the keys in Dialog content
-      | nameInput | canteen |
-      | shortName | cntn    |
-      | capacity  | 50      |
+      | nameInput   | Dosya       |
+      | description | Files Added |
     And Click on the element in the Dialog
       | saveButton |
-
     Then Success message should be displayed
 
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
-      | nameInput | library |
-      | shortName | lbry    |
-      | capacity  | 500     |
+      | nameInput   | Klasor       |
+      | description | Klasor Added |
     And Click on the element in the Dialog
       | saveButton |
     Then Success message should be displayed
 
-    And Click on the element in the Dialog
-      | slideToggle |
-    Then Success message should be displayed
-
-    And User delete item from Dialog
+    And User search and delete item from Dialog
+      | Klasor |
     Then Success message should be displayed
