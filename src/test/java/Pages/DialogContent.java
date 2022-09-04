@@ -107,7 +107,11 @@ public class DialogContent extends Parent{
     @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.CODE']>input")
     private WebElement searchCode;
 
+    @FindBy (xpath="(//ms-table-toolbar//button)[1]")
+    private WebElement tableAddButton;
 
+    @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.NAME']>input")
+    private WebElement searchGeneralName;
 
 
     WebElement myElement;
@@ -127,6 +131,7 @@ public class DialogContent extends Parent{
             case "descriptionInput" : myElement =descriptionInput; break;
             case "searchDescription" : myElement =searchDescription; break;
             case "searchCode" : myElement =searchCode; break;
+            case "searchGeneralName" : myElement =searchGeneralName; break;
         }
 
         sendKeysFunction(myElement, value);
@@ -149,6 +154,7 @@ public class DialogContent extends Parent{
             case "editButton" : myElement =editButton; break;
             case "slideToggle" : myElement =slideToggle; break;
             case "section" : myElement =section; break;
+            case "tableAddButton" : myElement =tableAddButton; break;
 
         }
 
