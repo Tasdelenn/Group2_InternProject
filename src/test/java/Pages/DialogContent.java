@@ -131,6 +131,9 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-delete-button//button)[3]")
     private WebElement deleteButton3;
 
+    @FindBy(xpath = "(//ms-edit-button//button)[3]")
+    private WebElement editButton3;
+
     @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.NAME']>input")
     private WebElement searchGeneralName;
 
@@ -184,6 +187,7 @@ public class DialogContent extends Parent{
             case "nextGrade" : myElement =nextGrade; break;
             case "graduateLevel" : myElement =graduateLevel; break;
             case "deleteButton3" : myElement =deleteButton3; break;
+            case "editButton3" : myElement =editButton3; break;
 
         }
 
