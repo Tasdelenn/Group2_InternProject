@@ -39,9 +39,15 @@ public class LeftNav extends Parent{
     private WebElement entranceExams2;
 
     //-----------------------------------------------------
-
+    //TEC1 - TEC2 LeftNav
     @FindBy(xpath = "//span[text()='Human Resources']")
     private WebElement humanResources;
+
+    @FindBy(xpath = "(//span[text()='Setup'])[3]")
+    private WebElement hrSetup;
+
+    @FindBy(xpath = "//span[text()='Position Categories']")
+    private WebElement positionCategories;
 
     @FindBy(xpath = "//span[text()='Employees']")
     private WebElement employees;
@@ -96,6 +102,9 @@ public class LeftNav extends Parent{
             case "discounts" : myElement =discounts; break;
             case "documentTypes" : myElement =documentTypes; break;
             case "gradeLevels" : myElement =gradeLevels; break;
+            case "hrSetup" : myElement =hrSetup; break;
+            case "positionCategories" : myElement =positionCategories; break;
+
         }
 
         clickFunction(myElement);
