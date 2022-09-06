@@ -23,7 +23,6 @@ Feature: Human Resources Attestations
       | searchInput | Ali Onay |
     And Click on the element in the Dialog
       | searchButton |
-
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
