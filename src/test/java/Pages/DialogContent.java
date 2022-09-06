@@ -143,8 +143,18 @@ public class DialogContent extends Parent{
     private WebElement addButtonField;
 
     //_TEC9_
+    @FindBy(xpath = "//ms-masked-text-field[@formcontrolname='iban']//input")
+    private WebElement ibanInput;
+
     @FindBy(xpath = "//mat-select[@formcontrolname='currency']")
     private WebElement currencyMenu;
+
+    @FindBy(xpath = "//span[text()=' EUR ']")
+    private WebElement euro;
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
+    private WebElement integrationCode2;
+
+
 
 
 
@@ -169,6 +179,8 @@ public class DialogContent extends Parent{
             case "searchGeneralName" : myElement =searchGeneralName; break;
             case "description" : myElement =description; break;
             case "order" : myElement =order; break;
+            case "ibanInput" : myElement =ibanInput; break;
+            case "integrationCode2" : myElement =integrationCode2; break;
         }
 
         sendKeysFunction(myElement, value);
@@ -200,6 +212,8 @@ public class DialogContent extends Parent{
             case "deleteButton3" : myElement =deleteButton3; break;
             case "editButton3" : myElement =editButton3; break;
             case "addButtonField" : myElement =addButtonField; break;
+            case "currencyMenu" : myElement =currencyMenu; break;
+            case "euro" : myElement =euro; break;
 
 
         }
