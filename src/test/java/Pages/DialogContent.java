@@ -220,6 +220,20 @@ public class DialogContent extends Parent{
         findAndClick("deleteDialogBtn");// dilogdaki silme butonuna bas
     }
 
+    public void SearchAndEdit(String searchText,String editNewText){
+        findAndSend("searchInput", searchText); // aranacak kelimeyi kutucuğa gönder
+        findAndClick("searchButton"); // arama butonuna bas
+
+        //waitUntilLoading();
+        WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.textToBe(By.cssSelector("div[fxlayoutalign='center center'][class='control-full']"),"Search"));
+
+
+        findAndClick("editButton");// edit butonua bas
+        findAndSend("editInput", editNewText);  // değiştirilecek kelimeyi kutucuğa gönder
+        findAndClick("saveButton");// dilogdaki kayıt butonuna bas
+    }
+
 
 
 
