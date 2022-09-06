@@ -40,6 +40,7 @@ public class LeftNav extends Parent{
 
     //-----------------------------------------------------
     //TEC1 - TEC2 LeftNav
+
     @FindBy(xpath = "//span[text()='Human Resources']")
     private WebElement humanResources;
 
@@ -57,6 +58,7 @@ public class LeftNav extends Parent{
 
     //----------------------------------------------------
     // TEC7 - TEC8 LeftNav
+
     @FindBy(xpath = "//span[text()='School Setup']")
     private WebElement schoolSetup;
 
@@ -66,9 +68,9 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "//span[text()='Departments']")
     private WebElement departments;
 
-
     //----------------------------------------------------
     // TEC-11 - TEC-12 LeftNav
+
     @FindBy(xpath = "//span[text()='Discounts']")
     private WebElement discounts;
 
@@ -80,6 +82,19 @@ public class LeftNav extends Parent{
 
     @FindBy(xpath = "//a/span[text()=\"Grade Levels\"]")
     private WebElement gradeLevels;
+
+    //---------------------------------------------------
+    // TEC6 - LeftNav
+
+    @FindBy(xpath = "//span[text()='Education']")
+    private WebElement education;
+
+    @FindBy(xpath = "(//span[text()='Setup'])[4]")
+    private WebElement educationSetup;
+
+    @FindBy(xpath = "//a/span[text()='Subject Categories']")
+    private WebElement subjectCategories;
+
 
 
 
@@ -108,6 +123,9 @@ public class LeftNav extends Parent{
             case "hrSetup" : myElement =hrSetup; break;
             case "positionCategories" : myElement =positionCategories; break;
             case "attestations" : myElement =attestations; break;
+            case "education" : myElement =education; break;
+            case "educationSetup" : myElement =educationSetup; break;
+            case "subjectCategories" : myElement =subjectCategories; break;
 
         }
 
