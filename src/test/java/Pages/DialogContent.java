@@ -137,6 +137,17 @@ public class DialogContent extends Parent{
     @FindBy (css="ms-text-field[placeholder='GENERAL.FIELD.NAME']>input")
     private WebElement searchGeneralName;
 
+    //_TEC4_
+
+    @FindBy(xpath = "//ms-add-button[contains(@tooltip,'GENERAL.BUTTON.ADD')]//button")
+    private WebElement addButtonField;
+
+    //_TEC9_
+    @FindBy(xpath = "//mat-select[@formcontrolname='currency']")
+    private WebElement currencyMenu;
+
+
+
 
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
@@ -188,6 +199,8 @@ public class DialogContent extends Parent{
             case "graduateLevel" : myElement =graduateLevel; break;
             case "deleteButton3" : myElement =deleteButton3; break;
             case "editButton3" : myElement =editButton3; break;
+            case "addButtonField" : myElement =addButtonField; break;
+
 
         }
 
