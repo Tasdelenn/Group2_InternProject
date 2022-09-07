@@ -5,6 +5,7 @@ Feature: School Setup Departments Functionality
     When Enter username and password and click login button
     Then User should login successfuly
 
+  @Regression @SetupSchoolTest
   Scenario: Create School Departments
     And Click on the element in the left Nav
       | setupOne    |
