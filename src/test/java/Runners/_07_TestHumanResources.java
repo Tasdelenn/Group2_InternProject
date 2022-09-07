@@ -12,7 +12,9 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/java/FeatureFiles/_TEC2_HR_Setup_Attestations.feature",
                 "src/test/java/FeatureFiles/_TEC5_HR_Setup_Positions.feature"
         },
-        glue = {"StepDefinitions"}
+        glue = {"StepDefinitions"},
+
+        plugin = {"html:target\\cucumber-reports.html"}
 
 )
 public class _07_TestHumanResources extends AbstractTestNGCucumberTests {

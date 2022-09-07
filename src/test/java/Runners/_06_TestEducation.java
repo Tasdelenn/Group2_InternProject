@@ -10,7 +10,9 @@ import io.cucumber.testng.CucumberOptions;
         tags = "@EducationTest",
         features = {"src/test/java/FeatureFiles/_TEC6_Subject_Categories.feature"
         },
-        glue = {"StepDefinitions"}
+        glue = {"StepDefinitions"},
+
+        plugin = {"html:target\\cucumber-reports.html"}
 
 )
 public class _06_TestEducation extends AbstractTestNGCucumberTests {

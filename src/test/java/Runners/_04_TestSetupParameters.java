@@ -15,7 +15,9 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/java/FeatureFiles/_TEC11_SetupParametersDiscount.feature",
                 "src/test/java/FeatureFiles/_TEC12_SetupParametersNationality.feature"
         },
-        glue = {"StepDefinitions"}
+        glue = {"StepDefinitions"},
+
+        plugin = {"html:target\\cucumber-reports.html"}
 
 )
 public class _04_TestSetupParameters extends AbstractTestNGCucumberTests {
