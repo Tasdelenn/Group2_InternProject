@@ -7,10 +7,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         tags = "@SmokeTest",
-        features = {"src/test/java/FeatureFiles/_01_Login.feature",
-                "src/test/java/FeatureFiles/_TEC1_HR_Setup_PositionCategories.feature"
-        },
-        glue = {"StepDefinitions"}
+        features = {"src/test/java/FeatureFiles/"},
+        glue = {"StepDefinitions"},
+
+        plugin = {"html:target\\cucumber-reports.html"}
 
 )
 public class _03_TestSmoke extends AbstractTestNGCucumberTests {
