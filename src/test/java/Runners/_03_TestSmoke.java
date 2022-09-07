@@ -13,6 +13,6 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"StepDefinitions"}
 
 )
-public class TestSmoke extends AbstractTestNGCucumberTests {
+public class _03_TestSmoke extends AbstractTestNGCucumberTests {
 
 }
