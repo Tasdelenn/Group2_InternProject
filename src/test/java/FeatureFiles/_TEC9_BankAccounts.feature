@@ -5,6 +5,7 @@ Feature: Bank Account Functionality
     When Enter username and password and click login button
     Then User should login successfuly
 
+  @Regression @SetupParametersTest
   Scenario:Create Bank Account
     And Click on the element in the left Nav
       | setupOne     |

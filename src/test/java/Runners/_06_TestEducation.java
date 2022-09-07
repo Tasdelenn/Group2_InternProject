@@ -1,0 +1,18 @@
+package Runners;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+
+@CucumberOptions(
+
+        // tags 'a and veya or diyerek test ekleyebiliriz
+        tags = "@EducationTest",
+        features = {"src/test/java/FeatureFiles/_TEC6_Subject_Categories.feature"
+        },
+        glue = {"StepDefinitions"}
+
+)
+public class _06_TestEducation extends AbstractTestNGCucumberTests {
+
+}

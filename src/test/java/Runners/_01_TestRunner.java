@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"StepDefinitions"}
 
 )
-public class TestRunner_01 extends AbstractTestNGCucumberTests {
+public class _01_TestRunner extends AbstractTestNGCucumberTests {
 
 
 

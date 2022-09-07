@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
                         // testi çalıştırmadan sadece adımların varlığına bakar...
 
 )
-public class TestRunner_02 extends AbstractTestNGCucumberTests {
+public class _02_TestRunner extends AbstractTestNGCucumberTests {
 
 
 }

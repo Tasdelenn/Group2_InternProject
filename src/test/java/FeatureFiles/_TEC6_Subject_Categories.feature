@@ -5,6 +5,7 @@ Feature: Subject Categories Functionality
     When Enter username and password and click login button
     Then User should login successfuly
 
+  @Regression @EducationTest
   Scenario: Create , Edit and Delete Subject Categories
     And Click on the element in the left Nav
       | education         |

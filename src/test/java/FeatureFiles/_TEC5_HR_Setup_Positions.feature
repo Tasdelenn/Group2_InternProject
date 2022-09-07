@@ -5,6 +5,7 @@ Feature: HR Positions Functionality
     When Enter username and password and click login button
     Then User should login successfuly
 
+  @Regression @HumanResourcesTest
   Scenario: Create, Edit And Delete a HR Position
     And Click on the element in the left Nav
       | humanResources |
