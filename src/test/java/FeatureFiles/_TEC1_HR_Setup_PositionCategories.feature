@@ -5,6 +5,7 @@ Feature: Human Resources Position Categories
     When Enter username and password and click login button
     Then User should login successfuly
 
+  @Regression
   Scenario: Create, Edit And Delete a Position Category
     And Click on the element in the left Nav
       | humanResources     |
