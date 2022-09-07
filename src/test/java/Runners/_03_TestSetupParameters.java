@@ -20,6 +20,6 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {"html:target\\cucumber-reports.html"}
 
 )
-public class _04_TestSetupParameters extends AbstractTestNGCucumberTests {
+public class _03_TestSetupParameters extends AbstractTestNGCucumberTests {
 
 }

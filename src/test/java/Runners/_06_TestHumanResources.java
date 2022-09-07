@@ -17,6 +17,6 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {"html:target\\cucumber-reports.html"}
 
 )
-public class _07_TestHumanResources extends AbstractTestNGCucumberTests {
+public class _06_TestHumanResources extends AbstractTestNGCucumberTests {
 
 }

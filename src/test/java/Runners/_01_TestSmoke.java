@@ -6,17 +6,13 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-        // tags 'a and veya or diyerek test ekleyebiliriz
-        tags = "@Regression",
+        tags = "@SmokeTest",
         features = {"src/test/java/FeatureFiles/"},
-
         glue = {"StepDefinitions"},
-
-        dryRun = true,
 
         plugin = {"html:target\\cucumber-reports.html"}
 
 )
-public class _04_TestRegression extends AbstractTestNGCucumberTests {
+public class _01_TestSmoke extends AbstractTestNGCucumberTests {
 
 }
