@@ -14,8 +14,8 @@ Feature: Login Functionality
     And Click on the element in the Dialog
       | addButtonField  |
     And User sending the keys in Dialog content
-      | nameInput | zzddzzs |
-      | codeInput | zzdzzzs |
+      | nameInput | fieldNew |
+      | codeInput | 232323   |
     And Click on the element in the Dialog
       | saveButton |
     Then Success message should be displayed
@@ -23,15 +23,15 @@ Feature: Login Functionality
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
-      | nameInput | zzzzdddzzzs   |
-      | codeInput | zzzzzzssszzzs |
+      | nameInput | fieldNewest |
+      | codeInput | 454545      |
     And Click on the element in the Dialog
       | saveButton |
 
     Then Success message should be displayed
 
     And User search and delete item from Dialog
-      | zzzzdddzzzs |
+      | fieldNewest |
 
 
     Then Success message should be displayed

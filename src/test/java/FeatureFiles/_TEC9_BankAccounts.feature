@@ -17,8 +17,8 @@ Feature: Bank Account Functionality
       | euro         |
     And User sending the keys in Dialog content
       | nameInput        | TechnoStudy |
-      | ibanInput        | TR214123    |
-      | integrationCode2 | 2546455     |
+      | ibanInput        | TR21412355  |
+      | integrationCode2 | 2546455555  |
     And Click on the element in the Dialog
       |saveButton|
     Then Success message should be displayed
@@ -27,9 +27,9 @@ Feature: Bank Account Functionality
       | editButton |
 
     And User sending the keys in Dialog content
-      | nameInput        | Study  |
-      | ibanInput        | TR6643 |
-      | integrationCode2 | 656656 |
+      | nameInput        | NewStudy   |
+      | ibanInput        | TR66431111 |
+      | integrationCode2 | 6566561111 |
 
     And Click on the element in the Dialog
       |saveButton|
