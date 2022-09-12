@@ -73,6 +73,20 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//button[@class='consent-give'])[1]")
     private WebElement acceptCookies;
 
+    @FindBy(id = "mat-error-0")
+    private WebElement requireUnamePass;
+
+    @FindBy(xpath = "//h1[text()='Reset your password']")
+    private WebElement resetPasswordHeader;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    private WebElement resetPasswordBtn;
+
+    @FindBy(css = "a.forgot-password")
+    private WebElement resetPasswordLink;
+    @FindBy(xpath = "//div[contains(text(),'Invalid username or password')]")
+    private WebElement invalidUnamePass;
+
     //------------------------------------------------------
     // TEC7 - TEC8 DialogContent
     @FindBy(xpath = "(//mat-select[@role=\"combobox\"])[3]")
@@ -214,6 +228,9 @@ public class DialogContent extends Parent{
             case "addButtonField" : myElement =addButtonField; break;
             case "currencyMenu" : myElement =currencyMenu; break;
             case "euro" : myElement =euro; break;
+            case "resetPasswordLink" : myElement =resetPasswordLink; break;
+            case "resetPasswordBtn" : myElement =resetPasswordBtn; break;
+
 
 
         }
@@ -228,6 +245,10 @@ public class DialogContent extends Parent{
             case "dashboard" : myElement =dashboard; break;
             case "successMessage" : myElement =successMessage; break;
             case "alreadyExist" : myElement =alreadyExist; break;
+            case "invalidUsernameAndPassword" : myElement = invalidUnamePass; break;
+            case "resetPasswordHeader" : myElement = resetPasswordHeader; break;
+            case "requiredUsernameAndPassword" : myElement = requireUnamePass; break;
+
         }
 
         verifyContainsText(myElement,text);
