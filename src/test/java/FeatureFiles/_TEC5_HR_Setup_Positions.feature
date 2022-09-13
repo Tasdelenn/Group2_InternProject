@@ -4,15 +4,14 @@ Feature: HR Positions Functionality
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
-  @Regression @HumanResourcesTest
-  Scenario: Create, Edit And Delete a HR Position
     And Click on the element in the left Nav
       | humanResources |
       | hrSetup        |
       | positions      |
 
-    And Click on the element in the Dialog
+  @Regression @HumanResourcesTest
+  Scenario: Create a HR Position
+    When Click on the element in the Dialog
       | addButton |
     And User sending the keys in Dialog content
       | nameInput | Mentoring |
@@ -22,8 +21,11 @@ Feature: HR Positions Functionality
     Then Success message should be displayed
     And Click on the element in the Dialog
       | slideToggle |
+    Then Success message should be displayed
 
-    And Click on the element in the Dialog
+  @Regression @HumanResourcesTest
+  Scenario: Edit a HR Position
+    When Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
       | nameInput | Teaching |
@@ -31,11 +33,9 @@ Feature: HR Positions Functionality
     And Click on the element in the Dialog
       | saveButton |
     Then Success message should be displayed
-    And Click on the element in the Dialog
-      | slideToggle |
+
+  @Regression @HumanResourcesTest
+  Scenario: Delete a HR Position
+    When User search and delete item from Dialog
+      | Teaching |
     Then Success message should be displayed
-
-    And User delete item from Dialog
-    Then Success message should be displayed
-
-
