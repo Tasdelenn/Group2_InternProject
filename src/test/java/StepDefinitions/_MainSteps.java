@@ -22,7 +22,7 @@ public class _MainSteps {
     public void clickOnTheElementInTheLeftNav(DataTable elements) {
         List<String> listElements = elements.asList(String.class);
 
-        for (int i = 0; i < listElements.size() ; i++) {
+        for (int i = 0; i < listElements.size(); i++) {
             ln.findAndClick(listElements.get(i));
         }
 
@@ -32,7 +32,7 @@ public class _MainSteps {
     public void clickOnTheElementInTheDialog(DataTable elements) {
         List<String> listElements = elements.asList(String.class);
 
-        for (int i = 0; i < listElements.size() ; i++) {
+        for (int i = 0; i < listElements.size(); i++) {
             dc.findAndClick(listElements.get(i));
         }
 
@@ -49,7 +49,7 @@ public class _MainSteps {
 
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
-        dc.findAndContainsText("successMessage","success");
+        dc.findAndContainsText("successMessage", "success");
         WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(text(),'successfully')]")));
     }

@@ -4,13 +4,13 @@ Feature: School Setup Locations Functionality
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
-  @Regression @SetupSchoolTest
-  Scenario: Create School Locations
     And Click on the element in the left Nav
       | setupOne    |
       | schoolSetup |
       | locations   |
+
+  @Regression @SetupSchoolTest
+  Scenario: Create School Locations
     And Click on the element in the Dialog
       | addButton       |
       | classroomSelect |
@@ -21,9 +21,10 @@ Feature: School Setup Locations Functionality
       | capacity  | 50      |
     And Click on the element in the Dialog
       | saveButton |
-
     Then Success message should be displayed
 
+  @Regression @SetupSchoolTest
+  Scenario: Edit School Locations
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
@@ -38,5 +39,7 @@ Feature: School Setup Locations Functionality
       | slideToggle |
     Then Success message should be displayed
 
+  @Regression @SetupSchoolTest
+  Scenario: Delete School Locations
     And User delete item from Dialog
     Then Success message should be displayed

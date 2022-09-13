@@ -4,13 +4,13 @@ Feature: Document Types Functionality
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
-  @Regression @SetupParametersTest
-  Scenario: Create, Edit And Delete a Document Types
     And Click on the element in the left Nav
       | setupOne      |
       | parameters    |
       | documentTypes |
+
+  @Regression @SetupParametersTest
+  Scenario: Create a Document Types
     And Click on the element in the Dialog
       | addButton   |
       | matSelect   |
@@ -23,6 +23,8 @@ Feature: Document Types Functionality
       | saveButton |
     Then Success message should be displayed
 
+  @Regression @SetupParametersTest
+  Scenario: Edit a Document Types
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
@@ -32,6 +34,8 @@ Feature: Document Types Functionality
       | saveButton |
     Then Success message should be displayed
 
+  @Regression @SetupParametersTest
+  Scenario: Delete a Document Types
     And User search and delete item from Dialog
       | Klasor |
     Then Success message should be displayed
