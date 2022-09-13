@@ -196,7 +196,6 @@ public class DialogContent extends Parent{
             case "ibanInput" : myElement =ibanInput; break;
             case "integrationCode2" : myElement =integrationCode2; break;
         }
-
         sendKeysFunction(myElement, value);
     }
 
