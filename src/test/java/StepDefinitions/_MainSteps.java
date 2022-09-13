@@ -54,9 +54,18 @@ public class _MainSteps {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(text(),'successfully')]")));
     }
 
+
+
     @And("User delete item from Dialog")
     public void userDeleteItemFromDialog() {
         dc.findAndClick("deleteButton");
         dc.findAndClick("deleteDialogBtn");
+    }
+
+    @Then("Already Exist message should be displayed")
+    public void alreadyExistMessageShouldBeDisplayed()  {
+        dc.findAndContainsText("alreadyExist","already exist");
+        WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(text(),'successfully')]")));
     }
 }

@@ -4,23 +4,24 @@ Feature: Human Resources Attestations
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
-  @Regression @HumanResourcesTest
-  Scenario: Create, Edit And Delete a Attestations
     And Click on the element in the left Nav
       | humanResources |
       | hrSetup        |
       | attestations   |
 
-    And Click on the element in the Dialog
+  @Regression @HumanResourcesTest
+  Scenario: Create a Attestations
+    When Click on the element in the Dialog
       | addButton |
     And User sending the keys in Dialog content
       | nameInput | Ali Onay |
     And Click on the element in the Dialog
       | saveButton |
-    And Success message should be displayed
+    Then Success message should be displayed
 
-    Then User sending the keys in Dialog content
+  @Regression @HumanResourcesTest
+  Scenario: Edit a Attestations
+    When User sending the keys in Dialog content
       | searchInput | Ali Onay |
     And Click on the element in the Dialog
       | searchButton |
@@ -30,16 +31,13 @@ Feature: Human Resources Attestations
       | nameInput | Veli Onay |
     And Click on the element in the Dialog
       | saveButton |
-    And Success message should be displayed
+    Then Success message should be displayed
 
-    Then User sending the keys in Dialog content
-      | searchInput | Veli Onay |
-    And Click on the element in the Dialog
-      | searchButton |
-    And Click on the element in the Dialog
-      | deleteButton    |
-      | deleteDialogBtn |
-    And Success message should be displayed
+  @Regression @HumanResourcesTest
+  Scenario: Delete a Attestations
+    When User search and delete item from Dialog
+      | Veli Onay |
+    Then Success message should be displayed
 
 
 
