@@ -59,8 +59,11 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//ms-search-button//button")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//ms-delete-button")
+    @FindBy(xpath = "(//ms-delete-button)[1]")
     private WebElement deleteButton;
+
+    @FindBy(xpath = "//*[@id=\"ms-table-1\"]/div/cdk-virtual-scroll-viewport/div[1]/table/tbody/tr[1]/td[5]/div[1]/ms-delete-button/button/span[1]/fa-icon")
+    private WebElement deleteButtonX;
 
 //    @FindBy(xpath = "//ms-delete-button//button")
 //    private List<WebElement> deleteButtons;
@@ -212,6 +215,7 @@ public class DialogContent extends Parent{
             case "closeDialog" : myElement =closeDialog; break;
             case "searchButton" : myElement =searchButton; break;
             case "deleteButton" :myElement =deleteButton; break;
+            case "deleteButtonX" :myElement =deleteButtonX; break;
 //            case "deleteButton" :myElement =deleteButtons.get(3); break;
             case "deleteDialogBtn" : myElement =deleteDialogBtn; break;
             case "acceptCookies" : myElement =acceptCookies; break;
