@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class DialogContent extends Parent{
 
@@ -58,9 +59,11 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//ms-search-button//button")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//ms-delete-button//button")
+    @FindBy(xpath = "//ms-delete-button")
     private WebElement deleteButton;
 
+//    @FindBy(xpath = "//ms-delete-button//button")
+//    private List<WebElement> deleteButtons;
     @FindBy(xpath = "//span[contains(text(),'Delete')]")
     private WebElement deleteDialogBtn;
 
@@ -209,7 +212,8 @@ public class DialogContent extends Parent{
             case "saveButton" : myElement =saveButton; break;
             case "closeDialog" : myElement =closeDialog; break;
             case "searchButton" : myElement =searchButton; break;
-            case "deleteButton" : myElement =deleteButton; break;
+            case "deleteButton" :myElement =deleteButton; break;
+//            case "deleteButton" :myElement =deleteButtons.get(3); break;
             case "deleteDialogBtn" : myElement =deleteDialogBtn; break;
             case "acceptCookies" : myElement =acceptCookies; break;
             case "classroomSelect" : myElement =classroomSelect; break;
