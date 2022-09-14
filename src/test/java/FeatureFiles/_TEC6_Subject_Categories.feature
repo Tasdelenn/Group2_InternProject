@@ -10,7 +10,7 @@ Feature: Subject Categories Functionality
       | subjectCategories |
 
   @Regression @EducationTest
-  Scenario: Create , Edit and Delete Subject Categories
+  Scenario: Create a Subject Category
     And Click on the element in the Dialog
       | addButton |
     And User sending the keys in Dialog content
@@ -21,7 +21,7 @@ Feature: Subject Categories Functionality
     Then Success message should be displayed
 
   @Regression @EducationTest
-  Scenario: Edit a Subject Categories
+  Scenario: Edit a Subject Category
     And Click on the element in the Dialog
       | editButton |
     And User sending the keys in Dialog content
@@ -32,7 +32,7 @@ Feature: Subject Categories Functionality
     Then Success message should be displayed
 
   @Regression @EducationTest
-  Scenario: Delete a Subject Categories
+  Scenario: Delete a Subject Category
     And User search and delete item from Dialog
       | Automation Engineer |
     Then Success message should be displayed

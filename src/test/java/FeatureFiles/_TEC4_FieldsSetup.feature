@@ -32,7 +32,7 @@ Feature: Fields Functionality
     Then Success message should be displayed
 
   @Regression @SetupParametersTest
-  Scenario:Edit Fields
+  Scenario:Delete Fields
     When User search and delete item from Dialog
       | fieldNewest |
     Then Success message should be displayed

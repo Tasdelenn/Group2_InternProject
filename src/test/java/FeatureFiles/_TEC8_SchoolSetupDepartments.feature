@@ -15,7 +15,6 @@ Feature: School Setup Departments Functionality
     And User sending the keys in Dialog content
       | nameInput | student affairs |
       | codeInput | stdntaf         |
-
     And Click on the element in the Dialog
       | section    |
       | saveButton |
