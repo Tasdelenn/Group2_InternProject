@@ -1755,6 +1755,54 @@
 								"url": "{{URL}}subject-categories"
 							},
 							"response": []
+						},
+						{
+							"name": "ADD Subject Categories NEGATIVE",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d7af807a-908b-464d-be8f-0d8fbc9b1f40",
+										"exec": [
+											"var scName = pm.response.json().name;\r",
+											"var scCode = pm.response.json().code;\r",
+											"var scId = pm.response.json().id;\r",
+											"\r",
+											"pm.collectionVariables.set(\"subjectCategoriesName\", scName);\r",
+											"pm.collectionVariables.set(\"subjectCategoriesCode\", scCode);\r",
+											"pm.collectionVariables.set(\"subjectCategoriesId\", scId);\r",
+											"\r",
+											"console.log(scName,scCode,scId);\r",
+											"\r",
+											"\r",
+											"pm.test(\"Status code is 201\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "98646aa7-abc7-41ec-bd65-453e99ee95d5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": null,\r\n  \"name\": \"{{$randomBsAdjective}}{{$randomInt}}\",\r\n  \"code\": \"{{$randomAlphaNumeric}}{{$randomInt}}\",\r\n  \"active\": false,\r\n  \"translateName\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}subject-categories"
+							},
+							"response": []
 						}
 					],
 					"id": "bb116a21-6d83-4ded-8f70-bf2be21a1433"
@@ -1822,90 +1870,90 @@
 	],
 	"variable": [
 		{
-			"id": "9b6d6f70-57a4-4c71-a1b5-1d2a2539ceb1",
+			"id": "b5337fe2-5dfa-4934-b0d9-dafc9f3536e7",
 			"key": "countryID",
 			"value": ""
 		},
 		{
-			"id": "0efcd19d-cd15-4dd7-9e76-6b18442dbba7",
+			"id": "86a2ca9d-ec7b-40ff-8185-5dfabbd8fde8",
 			"key": "countryName",
 			"value": ""
 		},
 		{
-			"id": "eb082ff2-ea2b-4607-a7c0-5a2389bd6828",
+			"id": "c26cbd6b-9101-46ed-a4fd-650b9eacaec8",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "c3a28d7b-6317-4da2-bfc7-1cd43b6b8d27",
+			"id": "4ad12b1d-60ef-412f-a13d-22b05042f28f",
 			"key": "positionCatName",
 			"value": ""
 		},
 		{
-			"id": "f10fe3f3-e113-4b8c-a5cc-b41f025ccd6c",
+			"id": "8c667bcf-c6ef-49b6-b679-4faf3e5fb71a",
 			"key": "positionCatId",
 			"value": ""
 		},
 		{
-			"id": "3e3c823b-42a8-4218-a1f8-dc597bf3e79c",
+			"id": "b0f111f2-697e-4b13-8992-b943dea11612",
 			"key": "locationsID",
 			"value": ""
 		},
 		{
-			"id": "c0d59062-dd72-47d3-ba5b-5134776188a7",
+			"id": "679fbc1c-441e-4cb8-8083-8aa9dd4bab4b",
 			"key": "locationsName",
 			"value": ""
 		},
 		{
-			"id": "ccaea97c-bb26-4c29-beaf-77b2d379363e",
+			"id": "2dc46dd3-7f1f-41ff-bc85-44284471f390",
 			"key": "positionName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "439e8e2b-54ba-4158-9899-c9612842e93a",
+			"id": "2b353ecf-eadf-4e37-9316-7a73e9e9e7be",
 			"key": "positionShortName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "42d92faa-59e3-4328-89c1-1dfb185d0c31",
+			"id": "1e0a4424-c9f0-4bcf-9e77-b908c5813757",
 			"key": "positionId",
 			"value": ""
 		},
 		{
-			"id": "76a033e6-cd87-4816-9a73-18f306535f54",
+			"id": "be3d9a9f-b355-49b0-a2cb-aa680908c886",
 			"key": "tenantId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "56f1df8b-ce1d-45d5-bd64-18bd57a57f00",
+			"id": "6330d7bd-0019-4bfb-a1db-a45220d05ae1",
 			"key": "position.TenantId",
 			"value": ""
 		},
 		{
-			"id": "510982dd-4d4d-46c2-80c7-3f74ecb3fb24",
+			"id": "597f57dc-cfbe-42d0-943d-461a91b38890",
 			"key": "attestationName",
 			"value": ""
 		},
 		{
-			"id": "8da5b2c3-2662-4e99-a9b0-fc0ab9c6e86c",
+			"id": "d0325a43-40ec-445d-8c14-86615ac3096f",
 			"key": "attestationId",
 			"value": ""
 		},
 		{
-			"id": "7014d907-72d0-4fe8-acbf-d041b3b699b3",
+			"id": "fcafc3f3-03e4-4db8-87a7-cb44521fe9ea",
 			"key": "subjectCategoriesName",
 			"value": ""
 		},
 		{
-			"id": "621a7ef2-32e2-4270-b703-cc3deeb03319",
+			"id": "e92f2853-eae5-4a96-8260-1814584303cc",
 			"key": "subjectCategoriesCode",
 			"value": ""
 		},
 		{
-			"id": "fb3f690a-2f58-482f-b6d4-5b222794eca7",
+			"id": "b1b55a9b-a53c-4024-97f4-742dfdfa0f0b",
 			"key": "subjectCategoriesId",
 			"value": ""
 		}
