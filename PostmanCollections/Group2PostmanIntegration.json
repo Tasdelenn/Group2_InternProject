@@ -1793,7 +1793,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"id\": null,\r\n  \"name\": \"{{$randomBsAdjective}}{{$randomInt}}\",\r\n  \"code\": \"{{$randomAlphaNumeric}}{{$randomInt}}\",\r\n  \"active\": false,\r\n  \"translateName\": []\r\n}",
+									"raw": "{\r\n  \"id\": null,\r\n  \"name\": \"{{subjectCategoriesName}}\",\r\n  \"code\": \"{{subjectCategoriesCode}}\",\r\n  \"active\": false,\r\n  \"translateName\": []\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1870,90 +1870,90 @@
 	],
 	"variable": [
 		{
-			"id": "b5337fe2-5dfa-4934-b0d9-dafc9f3536e7",
+			"id": "230e64d8-3a0a-4e4b-a3ee-c503dee5652a",
 			"key": "countryID",
 			"value": ""
 		},
 		{
-			"id": "86a2ca9d-ec7b-40ff-8185-5dfabbd8fde8",
+			"id": "87a8eabe-d293-4561-ae00-389844cb7a27",
 			"key": "countryName",
 			"value": ""
 		},
 		{
-			"id": "c26cbd6b-9101-46ed-a4fd-650b9eacaec8",
+			"id": "b2c693df-8518-410c-b572-b6d1df854e2e",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "4ad12b1d-60ef-412f-a13d-22b05042f28f",
+			"id": "dd921b49-9f77-4874-900e-587bbe9cd71c",
 			"key": "positionCatName",
 			"value": ""
 		},
 		{
-			"id": "8c667bcf-c6ef-49b6-b679-4faf3e5fb71a",
+			"id": "43c8ace3-fd16-4716-8d00-8e2ed93acd04",
 			"key": "positionCatId",
 			"value": ""
 		},
 		{
-			"id": "b0f111f2-697e-4b13-8992-b943dea11612",
+			"id": "daa3f9dd-45eb-4242-89fa-970ec4b63c50",
 			"key": "locationsID",
 			"value": ""
 		},
 		{
-			"id": "679fbc1c-441e-4cb8-8083-8aa9dd4bab4b",
+			"id": "51c9ea12-2540-4b48-a79a-e68b11cbaa2e",
 			"key": "locationsName",
 			"value": ""
 		},
 		{
-			"id": "2dc46dd3-7f1f-41ff-bc85-44284471f390",
+			"id": "d541d59b-6f47-4d1d-a034-3ca4fe0dd742",
 			"key": "positionName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2b353ecf-eadf-4e37-9316-7a73e9e9e7be",
+			"id": "5de22e35-c05e-41b7-952d-bac9e999bebf",
 			"key": "positionShortName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e0a4424-c9f0-4bcf-9e77-b908c5813757",
+			"id": "b1f3b1c5-460f-4758-a310-bfc09fb80cb8",
 			"key": "positionId",
 			"value": ""
 		},
 		{
-			"id": "be3d9a9f-b355-49b0-a2cb-aa680908c886",
+			"id": "cef3656f-2419-45d5-adcb-62951d720fb6",
 			"key": "tenantId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6330d7bd-0019-4bfb-a1db-a45220d05ae1",
+			"id": "d932799a-df82-4a9f-8431-4998c1ea26a3",
 			"key": "position.TenantId",
 			"value": ""
 		},
 		{
-			"id": "597f57dc-cfbe-42d0-943d-461a91b38890",
+			"id": "e8e2e668-6566-405f-885c-6456f4ef872a",
 			"key": "attestationName",
 			"value": ""
 		},
 		{
-			"id": "d0325a43-40ec-445d-8c14-86615ac3096f",
+			"id": "c8b5c67b-84b4-41fe-9722-f36f07bf566d",
 			"key": "attestationId",
 			"value": ""
 		},
 		{
-			"id": "fcafc3f3-03e4-4db8-87a7-cb44521fe9ea",
+			"id": "a0a0019d-62a0-4720-8f73-db6f5d447356",
 			"key": "subjectCategoriesName",
 			"value": ""
 		},
 		{
-			"id": "e92f2853-eae5-4a96-8260-1814584303cc",
+			"id": "c0251454-58cb-442c-ba22-e642f59e88d9",
 			"key": "subjectCategoriesCode",
 			"value": ""
 		},
 		{
-			"id": "b1b55a9b-a53c-4024-97f4-742dfdfa0f0b",
+			"id": "1cddf9c1-4e9c-4593-a14c-c2aa92a92f94",
 			"key": "subjectCategoriesId",
 			"value": ""
 		}
