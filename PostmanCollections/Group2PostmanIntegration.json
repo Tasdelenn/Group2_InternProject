@@ -1836,6 +1836,42 @@
 								"url": "https://demo.mersys.io/school-service/api/subject-categories"
 							},
 							"response": []
+						},
+						{
+							"name": "DELETE Subject Categories",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c3067225-5a48-4ef6-bfb2-3b1dfa518a07",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "5fda24d1-99cf-4b35-8e99-46d8e46c85cb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"{{subjectCategoriesId}}\",\r\n  \"name\": \"group2 {{subjectCategoriesName}}\",\r\n  \"code\": \"g2 {{subjectCategoriesCode}}\",\r\n  \"active\": true,\r\n  \"translateName\": []\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://demo.mersys.io/school-service/api/subject-categories"
+							},
+							"response": []
 						}
 					],
 					"id": "bb116a21-6d83-4ded-8f70-bf2be21a1433"
@@ -1903,90 +1939,90 @@
 	],
 	"variable": [
 		{
-			"id": "3907969a-d360-4803-9eb3-adb21ad5e9bf",
+			"id": "5898eb5f-45f5-487c-bbe4-f4f5b20ea7ad",
 			"key": "countryID",
 			"value": ""
 		},
 		{
-			"id": "4bd734c9-9dbd-487f-9f14-a00a733d2feb",
+			"id": "10ae12a5-91b1-424b-93d9-91b702c0e488",
 			"key": "countryName",
 			"value": ""
 		},
 		{
-			"id": "387a79e1-277f-4884-b860-fa1b2217ce06",
+			"id": "e9c06647-4e59-409a-8bef-372233a66919",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "74b06b38-9269-41eb-b1af-4ba0669a95ea",
+			"id": "63e75a33-0cee-4d14-85c8-0e0fdf643144",
 			"key": "positionCatName",
 			"value": ""
 		},
 		{
-			"id": "5436392a-4e55-48c5-8ef7-1a6119a41861",
+			"id": "f97c1216-715c-4768-b4ed-7d22f69ec924",
 			"key": "positionCatId",
 			"value": ""
 		},
 		{
-			"id": "269566f2-15e9-48f5-a0be-5257f3e0834a",
+			"id": "bd5f9836-a0ed-432c-8688-ead90b61a984",
 			"key": "locationsID",
 			"value": ""
 		},
 		{
-			"id": "d59c5fee-698a-403e-872e-366067217b36",
+			"id": "af28f126-65da-4b9b-8c83-0fcd6f3528c8",
 			"key": "locationsName",
 			"value": ""
 		},
 		{
-			"id": "c5881b09-1b12-4294-b393-bac582216976",
+			"id": "5f157f17-8e06-4308-b6ed-353aacf84508",
 			"key": "positionName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f9a66317-9a2e-4b7f-9bb2-8972c124cacb",
+			"id": "81c0adf7-def2-409b-b4ec-9fd1c3c2ba63",
 			"key": "positionShortName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1941ed61-1b9f-402f-ad8f-1fb7893442e8",
+			"id": "19f11f6a-73a3-4f33-a3c3-d27bc7f9fa8c",
 			"key": "positionId",
 			"value": ""
 		},
 		{
-			"id": "d5af0f37-df61-4141-add8-63e0074d145e",
+			"id": "c3fa43cb-6081-440a-a2a5-b178742b73a9",
 			"key": "tenantId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cca77f31-2b05-470f-9ec0-3e586bdc9368",
+			"id": "179eaa8b-497f-4a01-820e-5d00c1560b7d",
 			"key": "position.TenantId",
 			"value": ""
 		},
 		{
-			"id": "a1ed827a-cef7-4c20-979f-3ec8ac4534a1",
+			"id": "154815b7-d110-41f4-adc3-d04c0c199731",
 			"key": "attestationName",
 			"value": ""
 		},
 		{
-			"id": "6b9b9ffd-d794-4eca-99ab-7936dd26ee2b",
+			"id": "626962fe-f959-4b92-8347-a73e1d2d4ecb",
 			"key": "attestationId",
 			"value": ""
 		},
 		{
-			"id": "2e78d1b2-c72f-4940-bfa1-fe9882e35641",
+			"id": "3848879d-7f64-4074-ac9b-24e9b09fe29f",
 			"key": "subjectCategoriesName",
 			"value": ""
 		},
 		{
-			"id": "aaf3bd9c-6f96-4cd6-8a0e-fba13fd687d5",
+			"id": "b34ddc31-af1f-4f7a-9df9-6bcd4378e3f6",
 			"key": "subjectCategoriesCode",
 			"value": ""
 		},
 		{
-			"id": "21410e9f-3fc6-4dde-a9ff-663e39af4cae",
+			"id": "48e01a13-a27b-4e03-9d27-7c31e673fcf6",
 			"key": "subjectCategoriesId",
 			"value": ""
 		}
