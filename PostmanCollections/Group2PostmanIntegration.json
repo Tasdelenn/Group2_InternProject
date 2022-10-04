@@ -305,7 +305,44 @@
 						},
 						{
 							"name": "Departments",
-							"item": [],
+							"item": [
+								{
+									"name": "Login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "80c0c357-9f77-4d03-a39a-6c75cbde7193",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "199f74af-1a30-4c7c-bd97-c1320262656d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"username\": \"richfield.edu\",\r\n  \"password\": \"Richfield2020!\",\r\n  \"rememberMe\": \"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://demo.mersys.io/auth/login"
+									},
+									"response": []
+								}
+							],
 							"id": "a337e925-21dc-4e4c-afe6-1b2e0960b311"
 						},
 						{
@@ -2021,90 +2058,90 @@
 	],
 	"variable": [
 		{
-			"id": "888b80ff-b962-40a5-b96e-9388c447533a",
+			"id": "bbc4f0b2-35a2-4cc6-b56d-b8e7352291e1",
 			"key": "countryID",
 			"value": ""
 		},
 		{
-			"id": "248d13bb-8e8c-4eaa-9e1d-b79704d43569",
+			"id": "070dc9db-3c42-4b82-a89d-f09e9ff71485",
 			"key": "countryName",
 			"value": ""
 		},
 		{
-			"id": "0cf11be2-bb15-4491-8fbb-e2beea2005ed",
+			"id": "9ac03311-46cb-4260-b01d-056c71bc8a83",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "1508726e-befb-4e7f-b66d-eeafa221d46c",
+			"id": "f34d3f6c-5e7c-4f49-bccb-468c36f930c6",
 			"key": "positionCatName",
 			"value": ""
 		},
 		{
-			"id": "d0fb5493-b914-4f19-be23-b8598dabd779",
+			"id": "5512104a-8988-4444-9479-fa17822fe9c3",
 			"key": "positionCatId",
 			"value": ""
 		},
 		{
-			"id": "02fa233b-6757-4b95-8cff-8b182c42543b",
+			"id": "70c90776-0ada-40eb-9899-7bec054d8c56",
 			"key": "locationsID",
 			"value": ""
 		},
 		{
-			"id": "492e4c6e-73e9-4de5-a31d-18206bed8ebf",
+			"id": "b1ab0d5b-b332-46d5-b8a3-50b939e2025d",
 			"key": "locationsName",
 			"value": ""
 		},
 		{
-			"id": "bc267ba6-f212-4587-a651-60ba07f622a7",
+			"id": "cdc3c94b-c402-40c6-8575-5060732140a6",
 			"key": "positionName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "68bd4d22-0399-46b9-8d30-d53301737b9e",
+			"id": "44983a8c-aa4a-4fb8-ac0f-4a7e5e2bfe6a",
 			"key": "positionShortName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e1dabac-0e1b-44ca-9314-b3b08f98dde9",
+			"id": "8b3877bf-ea74-4f38-834f-22c52cb1db52",
 			"key": "positionId",
 			"value": ""
 		},
 		{
-			"id": "547a72eb-09e7-4334-9dfb-3fa153813a5b",
+			"id": "c355beef-b900-423b-bde8-ffa546583e67",
 			"key": "tenantId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1256262c-7ce6-4c4e-8ffe-a4e9aa1ab18b",
+			"id": "038c904f-527c-4a88-82f2-d91236394cbd",
 			"key": "position.TenantId",
 			"value": ""
 		},
 		{
-			"id": "739343ff-7858-4166-b608-cdc55b5c30af",
+			"id": "4e4cccda-693d-4887-bc7f-78a8462572fb",
 			"key": "attestationName",
 			"value": ""
 		},
 		{
-			"id": "cb06791a-95a1-4e88-be3e-d8334a932331",
+			"id": "cc307b75-9501-4da3-bf8e-5d5449a5dc4d",
 			"key": "attestationId",
 			"value": ""
 		},
 		{
-			"id": "ac1520be-064b-4a3e-86a5-bf285f5a86b5",
+			"id": "695988ba-b94f-4ae5-bf60-b52cb77b5e75",
 			"key": "subjectCategoriesName",
 			"value": ""
 		},
 		{
-			"id": "7d5746ab-cdfa-4837-9210-c4148b07de31",
+			"id": "753934cc-b5d2-4d9a-ac55-b78c6498aff7",
 			"key": "subjectCategoriesCode",
 			"value": ""
 		},
 		{
-			"id": "17c8321e-2205-49bb-91dc-c42f34db6ede",
+			"id": "cd49b4b1-aecd-4b49-9a44-b59b9d2a31c8",
 			"key": "subjectCategoriesId",
 			"value": ""
 		}
