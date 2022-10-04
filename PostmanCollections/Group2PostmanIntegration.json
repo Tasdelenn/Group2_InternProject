@@ -426,6 +426,23 @@
 								},
 								{
 									"name": "EDIT Departments",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "e47888d4-da13-4afc-a143-ef3f9d2afd5c",
+												"exec": [
+													"\r",
+													"\r",
+													"\r",
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "5b815752-6cba-4161-a82b-da3b7f930152",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -433,6 +450,15 @@
 									"request": {
 										"method": "PUT",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"id\": \"{{departmentsID}}\",\r\n  \"name\": \"{{$randomDepartment}} 2352\",\r\n  \"code\": \"{{$randomCurrencyCode}} 3453\",\r\n  \"school\": {\r\n    \"id\": \"5fe07e4fb064ca29931236a5\"\r\n  }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": "{{URL}}department"
 									},
 									"response": []
@@ -2153,100 +2179,100 @@
 	],
 	"variable": [
 		{
-			"id": "348d5024-ccd7-46ba-978c-1e2636416d67",
+			"id": "e90270ec-cbe9-42d5-b146-456e94a1a443",
 			"key": "countryID",
 			"value": ""
 		},
 		{
-			"id": "dc19cdfc-aad8-4d1f-ba4a-e2deae326354",
+			"id": "f7551409-c0b6-49b6-9d74-07d3469e269f",
 			"key": "countryName",
 			"value": ""
 		},
 		{
-			"id": "95e32357-82dc-47e1-9ac9-8a48635ccf63",
+			"id": "996ce9cc-ecbd-4442-a204-522f71dc3647",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "94764e87-0768-48cb-935e-4e538b8353bf",
+			"id": "c86bc4eb-11ee-4cf5-a895-1e6faaba088e",
 			"key": "positionCatName",
 			"value": ""
 		},
 		{
-			"id": "e1446d9f-9dd2-4cb6-97f6-81b4d35cc344",
+			"id": "d5bfe532-6d3d-415d-890c-4b6d226f4adc",
 			"key": "positionCatId",
 			"value": ""
 		},
 		{
-			"id": "90b24b7a-698a-4585-9f73-d5eca4ef1c70",
+			"id": "0549e646-ecea-4548-889a-a1c41334a036",
 			"key": "locationsID",
 			"value": ""
 		},
 		{
-			"id": "2148ff55-e82a-4361-8457-24315d9456f3",
+			"id": "c365f8fa-8942-48b9-aecb-d331b3659915",
 			"key": "locationsName",
 			"value": ""
 		},
 		{
-			"id": "19ed114f-e92b-440e-9c6e-3cf02f05bcd2",
+			"id": "57e38995-263c-4651-9c44-7f8632dece8c",
 			"key": "positionName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0d18409-0d34-465d-a365-5b7bde7598e9",
+			"id": "30d03566-297e-42ef-b861-c035b41d5057",
 			"key": "positionShortName",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4bc17d39-6e77-42be-8250-7c474b028e50",
+			"id": "2e399c4b-46dd-49c1-a89f-2df793383b04",
 			"key": "positionId",
 			"value": ""
 		},
 		{
-			"id": "049a4c76-f68b-4374-bef3-8e02ea8eef70",
+			"id": "1e6bcd8d-a5ae-4ada-8e86-de768a2b9e62",
 			"key": "tenantId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "65ded624-02ad-4837-b17f-c5916acce2d4",
+			"id": "5d0a9fca-192e-4f8c-9e57-e7faf53a428a",
 			"key": "position.TenantId",
 			"value": ""
 		},
 		{
-			"id": "0eed563b-a3d4-40d9-bd0a-3179e84e8d9e",
+			"id": "42d0be75-86e8-4a22-89f4-fbab5b4581a0",
 			"key": "attestationName",
 			"value": ""
 		},
 		{
-			"id": "4bde06bf-f4a0-4a7b-8297-bec8edd40776",
+			"id": "682cfe7c-055b-4a57-8d36-3a1f4be3d7a2",
 			"key": "attestationId",
 			"value": ""
 		},
 		{
-			"id": "652188d4-2e0c-4233-953f-f970395ce055",
+			"id": "6873a9bf-fef4-4c41-8076-8d4cc4f09e45",
 			"key": "subjectCategoriesName",
 			"value": ""
 		},
 		{
-			"id": "c90975b2-94c6-493f-9091-4ecda102f7af",
+			"id": "6f910953-e6a8-4135-b740-74fa68293a03",
 			"key": "subjectCategoriesCode",
 			"value": ""
 		},
 		{
-			"id": "1fb4c2b4-d7b4-46fa-aff9-416de7673cda",
+			"id": "32198707-a097-409f-a79a-366efefd9050",
 			"key": "subjectCategoriesId",
 			"value": ""
 		},
 		{
-			"id": "a89a181f-afc5-46c5-af18-6f95bd3d5bd8",
+			"id": "40194163-ff40-40f2-a44e-cfe3fcc6b549",
 			"key": "departmentsID",
 			"value": ""
 		},
 		{
-			"id": "12d28373-9676-4f35-94e1-fba85e99baa1",
+			"id": "ffa5580a-e979-4713-9703-1ba26ee3c676",
 			"key": "departmentsName",
 			"value": ""
 		}
